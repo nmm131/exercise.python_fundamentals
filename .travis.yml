@@ -1,4 +1,4 @@
-language: python
+language: Pythonscript:  - pytest
 python:
   - "2.7"
   - "3.4"
