@@ -54,8 +54,6 @@ class StringManipulatorTest(TestCase):
     def test_get_hello_world(self):
         self.nullary_function_assert_equals(StringManipulator().get_hello_world, [["Hello World"]])
 
-
-
     def nullary_function_assert_equals(self, method_to_be_tested, value_sets):
         for value_set in value_sets:
             # given
@@ -71,7 +69,6 @@ class StringManipulatorTest(TestCase):
 
             # then
             self.assertEquals(expected_output, actual_output, calculation_error_message)
-
 
     def unary_function_assert_equals(self, method_to_be_tested, value_sets):
         for value_set in value_sets:
@@ -90,7 +87,6 @@ class StringManipulatorTest(TestCase):
 
             # then
             self.assertEquals(expected_output, actual_output, calculation_error_message)
-
 
     def binary_function_assert_equals(self, method_to_be_tested, value_sets):
         for value_set in value_sets:
@@ -111,7 +107,6 @@ class StringManipulatorTest(TestCase):
 
             # then
             self.assertEquals(expected_output, actual_output, calculation_error_message)
-
 
     def ternary_function_assert_equals(self, method_to_be_tested, value_sets):
         for value_set in value_sets:
